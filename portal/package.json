@@ -1,0 +1,23 @@
+{
+  "name": "portal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
+    "lodash.groupby": "^4.6.0",
+    "lodash.sortby": "^4.7.0",
+    "moment": "^2.22.2",
+    "react": "^16.5.2",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && aws s3 sync build/ s3://cerveza-static-dev"
+  }
+}
